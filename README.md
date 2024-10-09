@@ -1,5 +1,7 @@
 # Overview
-This repository stores all the code necessary for the real-time particle detection system. Simulating the full flow requires a Raspberry Pi, a laptop or computer, and an Arduino, with Python installed on the Pi and computer.
+This repository stores all the code necessary for a real-time particle detection system. Simulating the full flow requires a Raspberry Pi, a laptop or computer, and an Arduino, with Python installed on the Pi and computer. It was designed for a lensless DEP impedance cytometer, where the particles are generally microscopic cells or beads (for testing).
+
+This work was done for a 2024 summer student research position with the Biosensors Research Lab at the University of Manitoba under supervision of Dr. Elham Salimi, funded by a URA grant.
 # Usage
 Install [simulate.py](https://github.com/Biosensors-Research-Lab/Lensless-DEP-Impedance-Cytometer---Real-Time-Particle-Detection/blob/main/simulate.py) onto a Raspberry Pi connected to a computer via ethernet. The Pi must be assigned an IP address of `10.10.1.10` with subnet mask `255.255.255.0`. A binary file `data.bin` must be located in the same directory which contains the raw data as packets of 1036 bytes without any header information. This can be done by cutting out the header in a hex editor from any raw data file.
 
